@@ -27,14 +27,11 @@ header .left {
 }
 
 header .icon {
-	height: 2em;
-	display: block;
+	height: 3em;
 	margin-right: 1em;
 }
 
 header .title {
-	display: inline;
-	font-size: 1.25em;
 	text-transform: uppercase;
 }
 
@@ -47,7 +44,7 @@ header .nav-item {
 	text-align: center;
 	transform: translateZ(0);
 	cursor: pointer;
-	
+
 	line-height: 3.6;
 	padding: 0 1em;
 	font-size: 1.25em;
