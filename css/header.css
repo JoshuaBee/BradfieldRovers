@@ -7,8 +7,10 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #00BCD4;
-	color: #FFFFFF;
+	background-color: #BBDEFB;
+	background-color: var(--color-primary);
+	color: #000;
+	color: var(--color-primary-text);
 	justify-content: space-between;
 	display: flex;
 	display: -ms-flexbox;
@@ -50,8 +52,6 @@ header .nav-item {
 	cursor: pointer;
 
 	padding: 0 1em;
-	color: #FFF;
-	color: var(--color-primary-text);
 	opacity: 0.7;
 	position: relative;
 	transition: color .25s ease;
@@ -79,7 +79,8 @@ header .nav-label {
 header .nav-indicator {
 	left: 0;
 	right: 0;
-	background: #fff;
+	background-color: #FFD600;
+	background-color: var(--color-secondary);
 	bottom: 0;
 	height: 0.25em;
 	position: absolute;

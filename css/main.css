@@ -33,7 +33,10 @@ body {
 .sheet-nav {
 	position: absolute;
 	box-sizing: border-box;
-	background-color: var(--color-100);
+	background-color: #EEFFFF;
+	background-color: var(--color-primary-light);
+	color: #000;
+	color: var(--color-primary-light-text);
 	width: 814px;
 	top: 0%;
 	height: 100%;
