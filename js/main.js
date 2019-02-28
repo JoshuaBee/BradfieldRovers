@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(event){
+document.addEventListener("DOMContentLoaded", function(event){
 	//
 	// Updating selected nav tab based on scroll position.
 	//
