@@ -10,19 +10,19 @@ body {
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .main {
 	-webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 }
 
 .sheet {
 	position: relative;
-    height: 841px;
-    overflow: hidden;
+	height: 841px;
+	overflow: hidden;
 	z-index: 0;
 }
 
@@ -36,7 +36,7 @@ body {
 	background-color: var(--color-100);
 	width: 814px;
 	top: 0%;
-    height: 100%;
+	height: 100%;
 	z-index: 16;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -46,7 +46,7 @@ img.sheet-image  {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	-webkit-filter: drop-shadow(0em 0em 1em rgba(0,0,0,0.5));
-    filter: drop-shadow(0em 0em 1em rgba(0,0,0,0.5));
+	filter: drop-shadow(0em 0em 1em rgba(0,0,0,0.5));
 	z-index: 2;
 }
 

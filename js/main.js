@@ -4,23 +4,23 @@ document.addEventListener('DOMContentLoaded', function(event){
 	//
 	vNavItems = document.getElementById("headerNavigation").children[0].children;
 	vActiveID = 0;
-	
+
 	window.onscroll = function() {
 		var doc = document.documentElement;
 		var vScroll = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-		
+
 		// Each section is 942px high, and the header is 48px high.
 		//var vNavID = Math.floor((vScroll) / 942);
-		
+
 		// Each section is 841px high, and the header is 72px high.
 		var vNavID = Math.floor((vScroll) / 841);
 		vNavID--;
-		
+
 		// Only update the classes if they change.
 		if (vNavID != vActiveID) {
 			var vNavItem;
 			for (var i = 0; i < vNavItems.length; i++) {
-				
+
 				vNavItem = vNavItems[i];
 				if (i == vNavID) {
 					vNavItem.classList.add("selected");
@@ -29,26 +29,26 @@ document.addEventListener('DOMContentLoaded', function(event){
 					vNavItem.classList.remove("selected");
 				}
 			}
-			
+
 			// Update the active tab id.
 			vActiveID = vNavID;
 		}
 	};
-	
-	
+
+
 });
 
 function pageScroll(id) {
 	var vEl = document.getElementById(id);
 	var vHeader = document.getElementById("header");
-	
+
 	// Get the desired scroll position
 	var desiredScrollPosition = vEl.offsetTop - vHeader.offsetHeight;
 
 	// Scroll.
 	window.scrollTo({
-	    top: desiredScrollPosition,
-	    behavior: "smooth"
+		top: desiredScrollPosition,
+		behavior: "smooth"
 	});
 }
 
