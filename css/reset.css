@@ -51,6 +51,7 @@ q:before, q:after {
 }
 
 a {
+	color: inherit;
 	margin:0;
 	padding:0;
 	font-size:100%;
@@ -99,4 +100,12 @@ hr {
 
 input, select {
 	vertical-align:middle;
+}
+
+/* Link Fonts */
+a:link ,
+a:visited,
+a:hover ,
+a:active {
+	text-decoration: none;
 }

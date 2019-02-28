@@ -13,6 +13,7 @@ footer {
 	flex-wrap: nowrap;              /* default value; can be omitted */
 	justify-content: space-between; /* switched from default (flex-start, see below) */
 
+	color: var(--color-text2);
 	background-color: var(--color-A900);
 	box-sizing: border-box;
 	padding: 1em;
@@ -25,12 +26,16 @@ footer img {
 }
 
 footer .company-logo {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 	margin-right: 1em;
 }
 
 footer .company-name {
 	vertical-align: top;
 	display: inline-block;
+	font-weight: 700;
 }
 
 footer .social .social-link {
