@@ -11,6 +11,13 @@ body {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	/* Prevent text selection. */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .main {
@@ -21,13 +28,13 @@ body {
 
 .sheet {
 	position: relative;
-	height: 841px;
+	height: calc(100vh - 4.5em); /* The header bar is 4.5em. */
 	overflow: hidden;
 	z-index: 0;
 }
 
 .sheet:first-child {
-	margin-top: 72px;
+	margin-top: 4.5em; /* The header bar is 4.5em. */
 }
 
 .sheet-nav {
@@ -37,7 +44,7 @@ body {
 	background-color: var(--color-primary-light);
 	color: #000;
 	color: var(--color-primary-light-text);
-	width: 814px;
+	width: 50vw;
 	top: 0%;
 	height: 100%;
 	z-index: 16;

@@ -3,17 +3,23 @@ document.addEventListener("DOMContentLoaded", function(event){
 	// Updating selected nav tab based on scroll position.
 	//
 	vNavItems = document.getElementById("headerNavigation").children[0].children;
-	vActiveID = 0;
+	vActiveID = -1;
 
 	window.onscroll = function() {
 		var doc = document.documentElement;
 		var vScroll = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
-		// Each section is 942px high, and the header is 48px high.
-		//var vNavID = Math.floor((vScroll) / 942);
+		// Get the height of the browser.
+		var g = document.getElementsByTagName('body')[0];
+		var vBrowserHeight = window.innerHeight || doc.clientHeight || g.clientHeight;
 
-		// Each section is 841px high, and the header is 72px high.
-		var vNavID = Math.floor((vScroll) / 841);
+		// Get the height of the header.
+		var vHeader = document.getElementsByTagName('header')[0];
+		var vHeaderHeight = vHeader.clientHeight;
+
+		// Get the sheet height.
+		var vSheetHeight = vBrowserHeight - vHeaderHeight;
+		var vNavID = Math.floor(vScroll / vSheetHeight);
 		vNavID--;
 
 		// Only update the classes if they change.
@@ -34,8 +40,6 @@ document.addEventListener("DOMContentLoaded", function(event){
 			vActiveID = vNavID;
 		}
 	};
-
-
 });
 
 function pageScroll(id) {
@@ -45,22 +49,32 @@ function pageScroll(id) {
 	// Get the desired scroll position
 	var desiredScrollPosition = vEl.offsetTop - vHeader.offsetHeight;
 
+	var isIE = !!document.documentMode;
+	console.log("IE: " + isIE);
+	var isEdge = !!/Edge\//.test(navigator.userAgent);
+	console.log("Edge: " + isEdge);
+
 	// Scroll.
-	window.scrollTo({
-		top: desiredScrollPosition,
-		behavior: "smooth"
-	});
+	if (isIE || isEdge) {
+		window.scroll(0, desiredScrollPosition);
+	}
+	else {
+		window.scrollTo({
+			top: desiredScrollPosition,
+			behavior: "smooth"
+		});
+	}
 }
 
 //
 // Functions to apply hover to cards.
 //
 function cardMouseOver(el) {
-	el.classList.remove("elevation-2dp");
+	el.classList.remove("elevation-1dp");
 	el.classList.add("elevation-8dp");
 }
 
 function cardMouseOut(el) {
 	el.classList.remove("elevation-8dp");
-	el.classList.add("elevation-2dp");
+	el.classList.add("elevation-1dp");
 }
