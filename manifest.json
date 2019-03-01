@@ -1,0 +1,21 @@
+{
+  "short_name": "BR",
+  "name": "Bradfield Rovers",
+  "description": "The club website for Bradfield Rovers Football Club",
+  "icons": [
+	{
+	  "src": "images/logo/logo-192.png",
+	  "type": "image/png",
+	  "sizes": "192x192"
+	},
+	{
+	  "src": "/images/logo/logo-512.png",
+	  "type": "image/png",
+	  "sizes": "512x512"
+	}
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#BBDEFB",
+  "theme_color": "#BBDEFB"
+}
