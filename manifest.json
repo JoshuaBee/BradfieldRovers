@@ -4,12 +4,12 @@
   "description": "The club website for Bradfield Rovers Football Club",
   "icons": [
 	{
-	  "src": "images/logo/logo-192.png",
+	  "src": "images/logo/club-logo-192.png",
 	  "type": "image/png",
 	  "sizes": "192x192"
 	},
 	{
-	  "src": "/images/logo/logo-512.png",
+	  "src": "/images/logo/club-logo-512.png",
 	  "type": "image/png",
 	  "sizes": "512x512"
 	}
