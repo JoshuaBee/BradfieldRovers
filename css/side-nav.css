@@ -1,0 +1,54 @@
+/*--------------------------------//
+//                                //
+//           Side Nav             //
+//                                //
+//--------------------------------*/
+.side-nav {
+	background: #fff;
+    border-right: 1px solid rgba(0,0,0,.12);
+    bottom: 0;
+    font-size: 14px;
+    overflow-y: auto;
+    padding: 72px 0 40px;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform .15s ease;
+    width: 17.5em;
+    z-index: 5;
+}
+
+.side-nav.active {
+    transform: translateX(0);
+}
+
+.side-nav .tab {
+	padding-left: 1em;
+}
+
+.side-nav .tab.selected {
+	border-left-width: 0.25em;
+	border-left-style: solid;
+	border-left-color: #FFD600;
+	border-left-color: var(--color-secondary);
+	padding-left: 0.75em;
+}
+
+.mask {
+	background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateZ(0);
+    transition: opacity .2s linear;
+    visibility: hidden;
+}
+
+.mask.active {
+	opacity: 1;
+    visibility: visible;
+    z-index: 4;
+}

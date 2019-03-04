@@ -54,6 +54,8 @@
 		<link href="css/app-bar.css" rel="stylesheet" />
 		<!-- Tab CSS -->
 		<link href="css/tab.css" rel="stylesheet" />
+		<!-- Side Navigation CSS -->
+		<link href="css/side-nav.css" rel="stylesheet" />
 		<!-- Main CSS -->
 		<link href="css/main.css" rel="stylesheet" />
 		<!-- Card CSS -->
@@ -70,34 +72,56 @@
 
 		<header id="app-bar" class="app-bar elevation-4dp">
 			<div class="left">
-				<span class="navigation material-icons">&#xe5d2;</span>
+				<span class="navigation material-icons" onclick="sideNavOpen();">&#xe5d2;</span>
 				<span class="title h5"onclick="pageScroll('home');">Bradfield Rovers</span>
 			</div>
-			<nav id="tabs" class="tabs">
-				<ul>
-					<li class="tab" onclick="pageScroll('matches')">
+			<nav id="nav" class="nav">
+				<ul class="tabs">
+					<li class="tab" onclick="pageScroll('matches');">
 						<span class="tab-label h6">MATCHES</span>
 						<div class="tab-indicator"></div>
 					</li>
-					<li class="tab" onclick="pageScroll('players')">
+					<li class="tab" onclick="pageScroll('players');">
 						<span class="tab-label h6">PLAYERS</span>
 						<div class="tab-indicator"></div>
 					</li>
-					<li class="tab" onclick="pageScroll('management')">
+					<li class="tab" onclick="pageScroll('management');">
 						<span class="tab-label h6">MANAGEMENT</span>
 						<div class="tab-indicator"></div>
 					</li>
-					<li class="tab" onclick="pageScroll('history')">
+					<li class="tab" onclick="pageScroll('history');">
 						<span class="tab-label h6">HISTORY</span>
 						<div class="tab-indicator"></div>
 					</li>
-					<li class="tab" onclick="pageScroll('contact')">
+					<li class="tab" onclick="pageScroll('contact');">
 						<span class="tab-label h6">CONTACT&nbsp;US</span>
 						<div class="tab-indicator"></div>
 					</li>
 				</ul>
 			</nav>
 		</header>
+
+		<nav id="side-nav" class="side-nav elevation-16dp">
+			<ul class="tabs">
+				<li class="tab" onclick="pageScroll('matches')">
+					<span class="tab-label h6">MATCHES</span>
+				</li>
+				<li class="tab" onclick="pageScroll('players')">
+					<span class="tab-label h6">PLAYERS</span>
+				</li>
+				<li class="tab" onclick="pageScroll('management')">
+					<span class="tab-label h6">MANAGEMENT</span>
+				</li>
+				<li class="tab" onclick="pageScroll('history')">
+					<span class="tab-label h6">HISTORY</span>
+				</li>
+				<li class="tab" onclick="pageScroll('contact')">
+					<span class="tab-label h6">CONTACT&nbsp;US</span>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="mask" class="mask"></div>
 
 		<div class="main">
 

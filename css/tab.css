@@ -1,13 +1,13 @@
 /*--------------------------------//
 //                                //
-//             Header             //
+//              Tab               //
 //                                //
 //--------------------------------*/
-.tabs ul {
+.nav .tabs {
 	display: flex;
 }
 
-.tabs .tab {
+.nav .tabs .tab {
 	text-align: center;
 	cursor: pointer;
 
@@ -20,23 +20,23 @@
 	flex-grow: 1;
 }
 
-.tabs .tab > * {
+.nav .tabs .tab > * {
 	display: block;
 }
 
-.tabs .tab:hover {
+.nav .tabs .tab:hover {
 	opacity: 1;
 }
 
-.tabs .tab.selected {
+.nav .tabs .tab.selected {
 	opacity: 1;
 }
 
-.tabs .tab-label {
+.nav .tabs .tab-label {
 	line-height: 4.5rem;
 }
 
-.tabs .tab-indicator {
+.nav .tabs .tab-indicator {
 	left: 0;
 	right: 0;
 	background-color: #FFD600;
@@ -49,16 +49,22 @@
 	transition: transform .25s ease;
 }
 
-.tabs .tab.selected {
+.nav .tabs .tab.selected {
 	opacity: 1;
 }
 
-.tabs .selected .tab-indicator {
+.nav .tabs .selected .tab-indicator {
 	transform: scaleY(1);
 }
 
-@media only screen and (max-device-width: 1024px) {
-	.tabs .tab-label {
+@media only screen and (min-device-width: 752px) and (max-device-width: 960px) {
+	.nav .tabs .tab-label {
 		line-height: 3rem;
+	}
+}
+
+@media only screen and (max-device-width: 752px) {
+	.nav .tabs {
+        display: none;
 	}
 }

@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 	//
 	// Updating selected nav tab based on scroll position.
 	//
-	vNavItems = document.getElementById("tabs").children[0].children;
+	vNavItems = document.getElementById("nav").children[0].children;
+	vSideNavItems = document.getElementById("side-nav").children[0].children;
 	vActiveID = -1;
 
 	window.onscroll = function() {
@@ -28,11 +29,14 @@ document.addEventListener("DOMContentLoaded", function(event){
 			for (var i = 0; i < vNavItems.length; i++) {
 
 				vNavItem = vNavItems[i];
+				vSideNavItem = vSideNavItems[i];
 				if (i == vNavID) {
 					vNavItem.classList.add("selected");
+					vSideNavItem.classList.add("selected");
 				}
 				else {
 					vNavItem.classList.remove("selected");
+					vSideNavItem.classList.remove("selected");
 				}
 			}
 
@@ -64,6 +68,12 @@ function pageScroll(id) {
 			behavior: "smooth"
 		});
 	}
+
+	var vNav = document.getElementById("side-nav");
+	vNav.classList.remove("active");
+
+	var vMask = document.getElementById("mask");
+	vMask.classList.remove("active");
 }
 
 //
@@ -77,4 +87,13 @@ function cardMouseOver(el) {
 function cardMouseOut(el) {
 	el.classList.remove("elevation-8dp");
 	el.classList.add("elevation-1dp");
+}
+
+
+function sideNavOpen(el) {
+	var vNav = document.getElementById("side-nav");
+	vNav.classList.add("active");
+
+	var vMask = document.getElementById("mask");
+	vMask.classList.add("active");
 }

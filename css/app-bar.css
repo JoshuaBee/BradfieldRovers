@@ -21,22 +21,23 @@
 	align-items: center;
 	display: flex;
 	display: -ms-flexbox;
-	margin-left: 1em;
 	text-transform: uppercase;
 	height: 4.5em;
 }
 
 .app-bar .navigation {
 	display: none;
-	margin-right: 2em;
 	cursor: pointer;
+	padding: 1em;
 }
 
 .app-bar .title {
 	cursor: pointer;
+	padding: 0 1em;
+	line-height: 72px;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 752px) and (max-device-width: 960px) {
 	.app-bar {
 		height: 7em;
 		flex-flow: column wrap;
@@ -45,5 +46,17 @@
 
 	.app-bar .left {
 		height: 4em;
+	}
+}
+
+@media only screen and (max-device-width: 752px) {
+	.app-bar .navigation {
+        display: inline;
+	}
+}
+
+@media only screen and (max-device-width: 368px) {
+	.app-bar .title {
+		padding: 0;
 	}
 }
