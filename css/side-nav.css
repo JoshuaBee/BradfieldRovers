@@ -4,17 +4,17 @@
 //                                //
 //--------------------------------*/
 .side-nav {
-	background: #fff;
-    border-right: 1px solid rgba(0,0,0,.12);
+	color: #000;
+	color: var(--color-background-text);
+	background-color: #FFF;
+	background-color: var(--color-background);
+    top: 4.5em;
     bottom: 0;
-    font-size: 14px;
+    width: 75vw;
     overflow-y: auto;
-    padding: 72px 0 40px;
     position: fixed;
-    top: 0;
     transform: translateX(-100%);
     transition: transform .15s ease;
-    width: 17.5em;
     z-index: 5;
 }
 
@@ -24,6 +24,7 @@
 
 .side-nav .tab {
 	padding-left: 1em;
+	line-height: 3em;
 }
 
 .side-nav .tab.selected {
@@ -50,5 +51,14 @@
 .mask.active {
 	opacity: 1;
     visibility: visible;
-    z-index: 4;
+}
+
+.mask-active {
+	overflow: hidden;
+}
+
+@media only screen and (min-device-width: 752px) and (max-device-width: 960px) {
+	.side-nav {
+		top: 7em;
+	}
 }

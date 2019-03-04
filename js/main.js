@@ -32,10 +32,20 @@ document.addEventListener("DOMContentLoaded", function(event){
 				vSideNavItem = vSideNavItems[i];
 				if (i == vNavID) {
 					vNavItem.classList.add("selected");
-					vSideNavItem.classList.add("selected");
 				}
 				else {
 					vNavItem.classList.remove("selected");
+				}
+			}
+
+			var vSideNavItem;
+			for (var i = 0; i < vSideNavItems.length; i++) {
+
+				vSideNavItem = vSideNavItems[i];
+				if (i == vNavID) {
+					vSideNavItem.classList.add("selected");
+				}
+				else {
 					vSideNavItem.classList.remove("selected");
 				}
 			}
@@ -69,11 +79,57 @@ function pageScroll(id) {
 		});
 	}
 
+	hideSideNav();
+}
+
+function toggleSideNav() {
+	var vNav = document.getElementById("side-nav");
+	if (vNav.classList.contains("active")) {
+		hideSideNav();
+	}
+	else {
+		showSideNav();
+	}
+}
+
+// Function to show the Side Navigation.
+function showSideNav() {
+	var vNav = document.getElementById("side-nav");
+	vNav.classList.add("active");
+
+	var vMask = document.getElementById("mask");
+	vMask.classList.add("active");
+
+	document.body.classList.add("mask-active");
+
+	document.addEventListener("click", hideSideNavCheck);
+}
+
+// Function to hide the Side Navigation.
+function hideSideNav() {
 	var vNav = document.getElementById("side-nav");
 	vNav.classList.remove("active");
 
 	var vMask = document.getElementById("mask");
 	vMask.classList.remove("active");
+
+	document.body.classList.remove("mask-active");
+
+	document.removeEventListener("click", hideSideNavCheck);
+}
+
+// Function to check whether the Side Navigation was clicked or the background.
+// If the background is clicked then close the nav.
+function hideSideNavCheck(e) {
+	// Get the width of the browser.
+	var g = document.getElementsByTagName('body')[0];
+	var w = window.innerWidth || doc.clientWidth || g.clientWidth;
+
+	// The Side Navigation is 75vw wide, so any click greater then that is on
+	// the background, and then the nav can be closed.
+	if (e.clientX > 0.75 * w) {
+		hideSideNav();
+	}
 }
 
 //
@@ -87,13 +143,4 @@ function cardMouseOver(el) {
 function cardMouseOut(el) {
 	el.classList.remove("elevation-8dp");
 	el.classList.add("elevation-1dp");
-}
-
-
-function sideNavOpen(el) {
-	var vNav = document.getElementById("side-nav");
-	vNav.classList.add("active");
-
-	var vMask = document.getElementById("mask");
-	vMask.classList.add("active");
 }
