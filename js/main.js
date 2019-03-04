@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	//
 	// Updating selected nav tab based on scroll position.
 	//
-	vNavItems = document.getElementById("headerNavigation").children[0].children;
+	vNavItems = document.getElementById("tabs").children[0].children;
 	vActiveID = -1;
 
 	window.onscroll = function() {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 function pageScroll(id) {
 	var vEl = document.getElementById(id);
-	var vHeader = document.getElementById("header");
+	var vHeader = document.getElementById("app-bar");
 
 	// Get the desired scroll position
 	var desiredScrollPosition = vEl.offsetTop - vHeader.offsetHeight;

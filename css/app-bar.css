@@ -1,0 +1,49 @@
+/*--------------------------------//
+//                                //
+//            App Bar             //
+//                                //
+//--------------------------------*/
+.app-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #BBDEFB;
+	background-color: var(--color-primary);
+	color: #000;
+	color: var(--color-primary-text);
+	justify-content: space-between;
+	display: flex;
+	display: -ms-flexbox;
+	height: 4.5em;
+}
+
+.app-bar .left {
+	align-items: center;
+	display: flex;
+	display: -ms-flexbox;
+	margin-left: 1em;
+	text-transform: uppercase;
+	height: 4.5em;
+}
+
+.app-bar .navigation {
+	display: none;
+	margin-right: 2em;
+	cursor: pointer;
+}
+
+.app-bar .title {
+	cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.app-bar {
+		height: 7em;
+		flex-flow: column wrap;
+		-webkit-flex-flow: column wrap;
+	}
+
+	.app-bar .left {
+		height: 4em;
+	}
+}

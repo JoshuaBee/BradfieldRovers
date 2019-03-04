@@ -67,3 +67,13 @@ img.sheet-image  {
 .nav-right {
 	right: 0%;
 }
+
+@media only screen and (max-device-width: 1024px) {
+	.sheet {
+		height: calc(100vh - 7em); /* The header bar is 7em. */
+	}
+
+	.sheet:first-child {
+		margin-top: 7em; /* The header bar is 7em. */
+	}
+}

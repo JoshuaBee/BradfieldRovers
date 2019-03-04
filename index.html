@@ -50,8 +50,8 @@
 		<link href="css/font.css" rel="stylesheet" />
 		<!-- Elevation CSS -->
 		<link href="css/elevation.css" rel="stylesheet" />
-		<!-- Header CSS -->
-		<link href="css/header.css" rel="stylesheet" />
+		<!-- App Bar CSS -->
+		<link href="css/app-bar.css" rel="stylesheet" />
 		<!-- Tab CSS -->
 		<link href="css/tab.css" rel="stylesheet" />
 		<!-- Main CSS -->
@@ -68,31 +68,31 @@
 
 	<body>
 
-		<header id="header" class="elevation-4dp">
-			<div id="headerLeft" class="left" onclick="pageScroll('home');">
-				<img id="headerLogo" class="logo" src="images/logo/club-logo-192.svg" alt="Club Logo" />
-				<span id="headerTitle" class="title h5">Bradfield Rovers</span>
+		<header id="app-bar" class="app-bar elevation-4dp">
+			<div class="left">
+				<span class="navigation material-icons">&#xe5d2;</span>
+				<span class="title h5"onclick="pageScroll('home');">Bradfield Rovers</span>
 			</div>
-			<nav id="headerNavigation" class="tabs">
+			<nav id="tabs" class="tabs">
 				<ul>
 					<li class="tab" onclick="pageScroll('matches')">
-						<span class="tab-label button">MATCHES</span>
+						<span class="tab-label h6">MATCHES</span>
 						<div class="tab-indicator"></div>
 					</li>
 					<li class="tab" onclick="pageScroll('players')">
-						<span class="tab-label button">PLAYERS</span>
+						<span class="tab-label h6">PLAYERS</span>
 						<div class="tab-indicator"></div>
 					</li>
 					<li class="tab" onclick="pageScroll('management')">
-						<span class="tab-label button">MANAGEMENT</span>
+						<span class="tab-label h6">MANAGEMENT</span>
 						<div class="tab-indicator"></div>
 					</li>
 					<li class="tab" onclick="pageScroll('history')">
-						<span class="tab-label button">HISTORY</span>
+						<span class="tab-label h6">HISTORY</span>
 						<div class="tab-indicator"></div>
 					</li>
 					<li class="tab" onclick="pageScroll('contact')">
-						<span class="tab-label button">CONTACT&nbsp;US</span>
+						<span class="tab-label h6">CONTACT&nbsp;US</span>
 						<div class="tab-indicator"></div>
 					</li>
 				</ul>
