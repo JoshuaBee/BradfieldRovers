@@ -1,0 +1,64 @@
+/*--------------------------------//
+//                                //
+//             Header             //
+//                                //
+//--------------------------------*/
+.tabs ul {
+	display: flex;
+}
+
+.tabs .tab {
+	text-align: center;
+	cursor: pointer;
+
+	padding: 0 1em;
+	opacity: 0.7;
+	position: relative;
+	transition: color .25s ease;
+	text-transform: uppercase;
+	min-width: 5.5em;
+	flex-grow: 1;
+}
+
+.tabs .tab > * {
+	display: block;
+}
+
+.tabs .tab:hover {
+	opacity: 1;
+}
+
+.tabs .tab.selected {
+	opacity: 1;
+}
+
+.tabs .tab-label {
+	line-height: 4.5rem;
+}
+
+.tabs .tab-indicator {
+	left: 0;
+	right: 0;
+	background-color: #FFD600;
+	background-color: var(--color-secondary);
+	bottom: 0;
+	height: 0.25em;
+	position: absolute;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform .25s ease;
+}
+
+.tabs .tab.selected {
+	opacity: 1;
+}
+
+.tabs .selected .tab-indicator {
+	transform: scaleY(1);
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.tabs .tab-label {
+		line-height: 3rem;
+	}
+}
