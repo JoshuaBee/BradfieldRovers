@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
-	<g class="style-scope iron-icon">
-		<path d="M56 4v12h-12v-12h-24v12h-12v-12h-8v60h64v-60h-8zM60 60h-56v-36h56v36z" class="style-scope iron-icon"/>
-		<path d="M12 0h4v12h-4v-12z" class="style-scope iron-icon"/>
-		<path d="M48 0h4v12h-4v-12z" class="style-scope iron-icon"/>
-	</g>
-</svg>
