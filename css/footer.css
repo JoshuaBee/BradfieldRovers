@@ -48,14 +48,3 @@ footer .social .social-link {
 footer .social-link:hover {
 	transform: scale(1.1, 1.1);
 }
-
-@media (max-width: 26em) {
-	footer {
-		flex-direction: column-reverse;
-		text-align: center;
-	}
-
-	footer .td {
-		text-align: left;
-	}
-}
