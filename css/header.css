@@ -39,14 +39,6 @@ header .navigation ul {
 	display: flex;
 }
 
-/*header .nav-item {
-	transform: translateZ(0);
-
-	line-height: 3.6;
-	font-size: 1.25em;
-	display: inline-block;
-}*/
-
 header .nav-item {
 	text-align: center;
 	cursor: pointer;
@@ -95,4 +87,15 @@ header .nav-item.selected {
 
 header .selected .nav-indicator {
 	transform: scaleY(1);
+}
+
+@media only screen and (max-device-width: 1024px) {
+	header {
+		flex-flow: column wrap;
+		-webkit-flex-flow: column wrap;
+	}
+
+	header .nav-label {
+		line-height: 3rem;
+	}
 }
