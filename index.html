@@ -156,10 +156,17 @@
 				</picture>
 
 				<a href="https://www.thevillagemaid.co.uk/" target="_blank" rel="noopener noreferrer" itemprop="sponsor">
-					<picture class="sheet-image">
+					<!-- TODO: The SVG icon uses a Google Web Font Cinzel.
+						 Currently SVGs only use external fonts when embedded in
+						 the HTML but not when linked. I have decided to just
+						 use the png until a better solution arises. -->
+					<!--<picture class="sheet-image">
 						<source srcset="images/home/the-village-maid-1080.svg" type="image/svg+xml">
 						<img src="images/home/the-village-maid-1080.png" style="top: 70%; left: 80%;" alt="Away Kit Sponsor" />
-					</picture>
+					</picture>-->
+					<div class="sheet-image">
+						<img src="images/home/the-village-maid-1080.png" style="top: 70%; left: 80%;" alt="Away Kit Sponsor" />
+					</div>
 				</a>
 
 			</div><!-- sheet -->
