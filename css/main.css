@@ -70,7 +70,7 @@ body {
 	padding-right: 20px;
 }
 
-img.sheet-image  {
+.sheet-image img  {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	-webkit-filter: drop-shadow(0em 0em 1em rgba(0,0,0,0.5));
