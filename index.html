@@ -67,33 +67,33 @@
 		<header id="app-bar" class="app-bar elevation-4dp">
 			<div class="left">
 				<span class="navigation material-icons" onclick="toggleSideNav();">&#xe5d2;</span>
-				<span class="title h5"onclick="pageScroll('home');">Bradfield Rovers</span>
+				<h1 class="title h5"onclick="pageScroll('home');">Bradfield Rovers</h1>
 			</div>
 			<nav id="nav" class="nav">
 				<ul class="tabs">
 					<li class="tab" onclick="pageScroll('matches');">
 						<span class="tab-label h6">Matches</span>
 						<div class="tab-indicator"></div>
-					</li>
+					</li><!-- tab -->
 					<li class="tab" onclick="pageScroll('players');">
 						<span class="tab-label h6">Players</span>
 						<div class="tab-indicator"></div>
-					</li>
+					</li><!-- tab -->
 					<li class="tab" onclick="pageScroll('management');">
 						<span class="tab-label h6">Management</span>
 						<div class="tab-indicator"></div>
-					</li>
+					</li><!-- tab -->
 					<li class="tab" onclick="pageScroll('history');">
 						<span class="tab-label h6">History</span>
 						<div class="tab-indicator"></div>
-					</li>
+					</li><!-- tab -->
 					<li class="tab" onclick="pageScroll('contact');">
 						<span class="tab-label h6">Contact</span>
 						<div class="tab-indicator"></div>
-					</li>
-				</ul>
-			</nav>
-		</header>
+					</li><!-- tab -->
+				</ul><!-- tabs -->
+			</nav><!-- nav -->
+		</header><!-- app-bar -->
 
 		<nav id="side-nav" class="side-nav elevation-16dp">
 			<ul class="tabs">
@@ -113,11 +113,11 @@
 					<span class="tab-label h6">Contact</span>
 				</li>
 			</ul>
-		</nav>
+		</nav><!-- side-nav -->
 
 		<main role="main">
 
-			<div id="home" class="sheet">
+			<section id="home" class="sheet">
 
 				<picture class="sheet-background">
 					<source srcset="images/home/background-600.webp" type="image/webp" media="(max-width: 600px)">
@@ -131,29 +131,29 @@
 					<source srcset="images/home/background-2200.webp" type="image/webp" media="(max-width: 2200px)">
 					<source srcset="images/home/background-2400.webp" type="image/webp">
 					<img src="images/home/background-2400.jpg" alt="Home Background" />
-				</picture>
+				</picture><!-- sheet-background -->
 
 				<picture class="sheet-image">
 					<source srcset="images/home/kit-home-400.webp" type="image/webp">
 					<img src="images/home/kit-home-400.png" style="top: 40%; left: 20%;" alt="Home Kit" />
-				</picture>
+				</picture><!-- sheet-image -->
 
 				<a href="https://www.tes2000.co.uk/" target="_blank" rel="noopener noreferrer" itemprop="sponsor">
 					<picture class="sheet-image">
 						<source srcset="images/home/tes-1080.svg" type="image/svg+xml">
 						<img src="images/home/tes-1080.png" style="top: 70%; left: 20%;" alt="Home Kit Sponsor" />
-					</picture>
+					</picture><!-- sheet-image -->
 				</a>
 
 				<picture class="sheet-image" itemprop="logo">
 					<source srcset="images/logo/club-logo-512.svg" type="image/svg+xml">
 					<img src="images/logo/club-logo-512.png" style="top: 50%; left: 50%; height: 60%" alt="Club Logo" />
-				</picture>
+				</picture><!-- sheet-image -->
 
 				<picture class="sheet-image">
 					<source srcset="images/home/kit-away-400.webp" type="image/webp">
 					<img src="images/home/kit-away-400.png" style="top: 40%; left: 80%;" alt="Away Kit" />
-				</picture>
+				</picture><!-- sheet-image -->
 
 				<a href="https://www.thevillagemaid.co.uk/" target="_blank" rel="noopener noreferrer" itemprop="sponsor">
 					<!-- TODO: The SVG icon uses a Google Web Font Cinzel.
@@ -163,15 +163,14 @@
 					<!--<picture class="sheet-image">
 						<source srcset="images/home/the-village-maid-1080.svg" type="image/svg+xml">
 						<img src="images/home/the-village-maid-1080.png" style="top: 70%; left: 80%;" alt="Away Kit Sponsor" />
-					</picture>-->
+					</picture>--><!-- sheet-image -->
 					<div class="sheet-image">
 						<img src="images/home/the-village-maid-1080.png" style="top: 70%; left: 80%;" alt="Away Kit Sponsor" />
-					</div>
+					</div><!-- sheet-image -->
 				</a>
 
-			</div><!-- sheet -->
+			</section><!-- sheet -->
 
-			<!-- <div id="matches" class="sheet"> -->
 			<section id="matches" class="sheet">
 
 				<picture class="sheet-background">
@@ -186,45 +185,50 @@
 					<source srcset="images/match/background-2200.webp" type="image/webp" media="(max-width: 2200px)">
 					<source srcset="images/match/background-2400.webp" type="image/webp">
 					<img src="images/match/background-2400.jpg" alt="Matches Background" />
-				</picture>
+				</picture><!-- sheet-background -->
 
 				<div class="sheet-nav nav-right elevation-8dp">
 
-					<a href="" target="_blank" class="button text-button">
-						<span class="material-icons">&#xe878;</span>
-						<span class="h6">Fixtures</span>
-					</a>
+					<h2 class="h3">Matches</h2>
 
-					<a href="" target="_blank" class="button text-button">
-						<span class="material-icons">&#xe8dd;</span>
-						<span class="h6">Results</span>
-					</a>
-
-					<a href="" target="_blank" class="button text-button">
-						<span class="material-icons">&#xe242;</span>
-						<span class="h6">Table</span>
-					</a>
+					<h3 class="h4">First Team</h3>
 
 					<a href="" target="_blank" class="button text-button">
 						<span class="material-icons">&#xe878;</span>
 						<span class="h6">Fixtures</span>
-					</a>
+					</a><!-- button -->
 
 					<a href="" target="_blank" class="button text-button">
 						<span class="material-icons">&#xe8dd;</span>
 						<span class="h6">Results</span>
-					</a>
+					</a><!-- button -->
 
 					<a href="" target="_blank" class="button text-button">
 						<span class="material-icons">&#xe242;</span>
 						<span class="h6">Table</span>
-					</a>
+					</a><!-- button -->
+
+					<h3 class="h4">Reserve Team</h3>
+
+					<a href="" target="_blank" class="button text-button">
+						<span class="material-icons">&#xe878;</span>
+						<span class="h6">Fixtures</span>
+					</a><!-- button -->
+
+					<a href="" target="_blank" class="button text-button">
+						<span class="material-icons">&#xe8dd;</span>
+						<span class="h6">Results</span>
+					</a><!-- button -->
+
+					<a href="" target="_blank" class="button text-button">
+						<span class="material-icons">&#xe242;</span>
+						<span class="h6">Table</span>
+					</a><!-- button -->
 
 				</div><!-- sheet-nav -->
-			<!-- </div> --><!-- sheet -->
 			</section><!-- sheet -->
 
-			<div id="players" class="sheet">
+			<section id="players" class="sheet">
 
 				<picture class="sheet-background">
 					<source srcset="images/player/background-600.webp" type="image/webp" media="(max-width: 600px)">
@@ -238,7 +242,7 @@
 					<source srcset="images/player/background-2200.webp" type="image/webp" media="(max-width: 2200px)">
 					<source srcset="images/player/background-2400.webp" type="image/webp">
 					<img src="images/player/background-2400.jpg" alt="Player Background" />
-				</picture>
+				</picture><!-- sheet-background -->
 
 				<div class="sheet-nav nav-left elevation-8dp">
 
@@ -254,7 +258,7 @@
 									<source srcset="images/player/david-de-gea-500.webp" type="image/webp">
 									<img src="images/player/david-de-gea-500.png" alt="David De Gea" />
 								</picture>
-								<p class="subtitle2">David De Gea</p>
+								<span class="subtitle2">David De Gea</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -263,7 +267,7 @@
 									<source srcset="images/player/héctor-bellerin-500.webp" type="image/webp">
 									<img src="images/player/héctor-bellerin-500.png" alt="Héctor Bellerin" />
 								</picture>
-								<p class="subtitle2">Héctor Bellerin</p>
+								<span class="subtitle2">Héctor Bellerin</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -272,7 +276,7 @@
 									<source srcset="images/player/toby-alderweireld-500.webp" type="image/webp">
 									<img src="images/player/toby-alderweireld-500.png" alt="Toby Alderweireld" />
 								</picture>
-								<p class="subtitle2">Toby Alderweireld</p>
+								<span class="subtitle2">Toby Alderweireld</span>
 							</td><!-- card -->
 
 						</tr>
@@ -285,7 +289,7 @@
 									<source srcset="images/player/jan-vertonghen-500.webp" type="image/webp">
 									<img src="images/player/jan-vertonghen-500.png" alt="Jan Vertonghen" />
 								</picture>
-								<p class="subtitle2">Jan Vertonghen</p>
+								<span class="subtitle2">Jan Vertonghen</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -294,7 +298,7 @@
 									<source srcset="images/player/césar-azpilicueta-500.webp" type="image/webp">
 									<img src="images/player/césar-azpilicueta-500.png" alt="César Azpilicueta" />
 								</picture>
-								<p class="subtitle2">César Azpilicueta</p>
+								<span class="subtitle2">César Azpilicueta</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -303,7 +307,7 @@
 									<source srcset="images/player/wilfried-zaha-500.webp" type="image/webp">
 									<img src="images/player/wilfried-zaha-500.png" alt="Wilfried Zaha" />
 								</picture>
-								<p class="subtitle2">Wilfried Zaha</p>
+								<span class="subtitle2">Wilfried Zaha</span>
 							</td><!-- card -->
 
 						</tr>
@@ -316,7 +320,7 @@
 									<source srcset="images/player/jordan-henderson-500.webp" type="image/webp">
 									<img src="images/player/jordan-henderson-500.png" alt="Jordan Henderson" />
 								</picture>
-								<p class="subtitle2">Jordan Henderson</p>
+								<span class="subtitle2">Jordan Henderson</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -325,7 +329,7 @@
 									<source srcset="images/player/mesut-özil-500.webp" type="image/webp">
 									<img src="images/player/mesut-özil-500.png" alt="Mesut Özil" />
 								</picture>
-								<p class="subtitle2">Mesut Özil</p>
+								<span class="subtitle2">Mesut Özil</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -334,7 +338,7 @@
 									<source srcset="images/player/eden-hazard-500.webp" type="image/webp">
 									<img src="images/player/eden-hazard-500.png" alt="Eden Hazard" />
 								</picture>
-								<p class="subtitle2">Eden Hazard</p>
+								<span class="subtitle2">Eden Hazard</span>
 							</td><!-- card -->
 
 						</tr>
@@ -347,7 +351,7 @@
 									<source srcset="images/player/alexis-sánchez-500.webp" type="image/webp">
 									<img src="images/player/alexis-sánchez-500.png" alt="Alexis Sánchez" />
 								</picture>
-								<p class="subtitle2">Alexis Sánchez</p>
+								<span class="subtitle2">Alexis Sánchez</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -356,7 +360,7 @@
 									<source srcset="images/player/sergio-agüero-500.webp" type="image/webp">
 									<img src="images/player/sergio-agüero-500.png" alt="Sergio Agüero" />
 								</picture>
-								<p class="subtitle2">Sergio Agüero</p>
+								<span class="subtitle2">Sergio Agüero</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -365,7 +369,7 @@
 									<source srcset="images/player/kevin-de-bruyne-500.webp" type="image/webp">
 									<img src="images/player/kevin-de-bruyne-500.png" alt="Kevin De Bruyne" />
 								</picture>
-								<p class="subtitle2">Kevin De Bruyne</p>
+								<span class="subtitle2">Kevin De Bruyne</span>
 							</td><!-- card -->
 
 						</tr>
@@ -378,7 +382,7 @@
 									<source srcset="images/player/paul-pogba-500.webp" type="image/webp">
 									<img src="images/player/paul-pogba-500.png" alt="Paul Pogba" />
 								</picture>
-								<p class="subtitle2">Paul Pogba</p>
+								<span class="subtitle2">Paul Pogba</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -387,7 +391,7 @@
 									<source srcset="images/player/phillipe-coutinho-500.webp" type="image/webp">
 									<img src="images/player/phillipe-coutinho-500.png" alt="Phillipe Coutinho" />
 								</picture>
-								<p class="subtitle2">Phillipe Coutinho</p>
+								<span class="subtitle2">Phillipe Coutinho</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -396,7 +400,7 @@
 									<source srcset="images/player/zlatan-ibrahimovic-500.webp" type="image/webp">
 									<img src="images/player/zlatan-ibrahimovic-500.png" alt="Zlatan Ibrahimovic" />
 								</picture>
-								<p class="subtitle2">Zlatan Ibrahimovic</p>
+								<span class="subtitle2">Zlatan Ibrahimovic</span>
 							</td><!-- card -->
 
 						</tr>
@@ -404,9 +408,9 @@
 					</table><!-- card-list -->
 
 				</div><!-- sheet-nav -->
-			</div><!-- sheet -->
+			</section><!-- sheet -->
 
-			<div id="management" class="sheet">
+			<section id="management" class="sheet">
 
 				<picture class="sheet-background">
 					<source srcset="images/management/background-600.webp" type="image/webp" media="(max-width: 600px)">
@@ -420,7 +424,7 @@
 					<source srcset="images/management/background-2200.webp" type="image/webp" media="(max-width: 2200px)">
 					<source srcset="images/management/background-2400.webp" type="image/webp">
 					<img src="images/management/background-2400.jpg" alt="Management Background" />
-				</picture>
+				</picture><!-- sheet-background -->
 
 				<div class="sheet-nav nav-right elevation-8dp">
 
@@ -436,7 +440,7 @@
 									<source srcset="images/management/arsène-wenger-500.webp" type="image/webp">
 									<img src="images/management/arsène-wenger-500.png" alt="Arsène Wenger" />
 								</picture>
-								<p class="subtitle2">Arsène Wenger</p>
+								<span class="subtitle2">Arsène Wenger</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -445,7 +449,7 @@
 									<source srcset="images/management/jürgen-klopp-500.webp" type="image/webp">
 									<img src="images/management/jürgen-klopp-500.png" alt="Jürgen Klopp" />
 								</picture>
-								<p class="subtitle2">Jürgen Klopp</p>
+								<span class="subtitle2">Jürgen Klopp</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
@@ -454,7 +458,7 @@
 									<source srcset="images/management/antonio-conte-500.webp" type="image/webp">
 									<img src="images/management/antonio-conte-500.png" alt="Antonio Conte" />
 								</picture>
-								<p class="subtitle2">Antonio Conte</p>
+								<span class="subtitle2">Antonio Conte</span>
 							</td><!-- card -->
 
 						</tr>
@@ -462,9 +466,9 @@
 					</table><!-- card-list -->
 
 				</div><!-- sheet-nav -->
-			</div><!-- sheet -->
+			</section><!-- sheet -->
 
-			<div id="history" class="sheet">
+			<section id="history" class="sheet">
 
 				<picture class="sheet-background">
 					<source srcset="images/history/background-600.webp" type="image/webp" media="(max-width: 600px)">
@@ -478,13 +482,13 @@
 					<source srcset="images/history/background-2200.webp" type="image/webp" media="(max-width: 2200px)">
 					<source srcset="images/history/background-2400.webp" type="image/webp">
 					<img src="images/history/background-2400.jpg" alt="History Background" />
-				</picture>
+				</picture><!-- sheet-background -->
 
 				<div class="sheet-nav nav-left elevation-8dp">
 
 					<h2 class="h3">History</h2>
 
-					<p class="body1">Lorem ipsum dolor sit amet, consectetur
+					<span class="body1">Lorem ipsum dolor sit amet, consectetur
 						adipiscing elit. Fusce euismod laoreet nunc vel pharetra. Fusce
 						eget dolor placerat, condimentum lacus vel, scelerisque velit.
 						Curabitur bibendum mauris nisi, a convallis velit blandit sit amet.
@@ -496,9 +500,9 @@
 						vulputate, purus sit amet convallis tempor, libero sem feugiat
 						arcu, ut lobortis erat justo sed orci. Etiam faucibus metus at urna
 						porta, ut fermentum lorem sagittis. Aliquam urna sapien, accumsan
-						et lorem in, consectetur laoreet diam.</p>
+						et lorem in, consectetur laoreet diam.</span>
 					<br />
-					<p class="body1">Proin gravida viverra sapien, eu aliquam augue
+					<span class="body1">Proin gravida viverra sapien, eu aliquam augue
 						viverra non. Ut tincidunt quis erat eu commodo. Vivamus eu
 						fringilla sapien. Phasellus ultrices rhoncus arcu, in consequat
 						ligula mollis fermentum. Aliquam sapien erat, blandit nec est a,
@@ -511,14 +515,12 @@
 						aliquam pellentesque. Nullam elit tellus, pretium et ultricies
 						vitae, mollis non nulla. Suspendisse in nibh sed tortor facilisis
 						suscipit ac placerat enim. Nulla quis ultricies eros. Nunc rutrum
-						mauris nec ex tincidunt efficitur. Curabitur ac imperdiet nisi.</p>
+						mauris nec ex tincidunt efficitur. Curabitur ac imperdiet nisi.</span>
 
-				</div>
-				<!-- sheet-nav -->
-			</div>
-			<!-- sheet -->
+				</div><!-- sheet-nav -->
+			</section><!-- sheet -->
 
-			<div id="contact" class="sheet">
+			<section id="contact" class="sheet">
 
 				<picture class="sheet-background">
 					<source srcset="images/contact/background-600.webp" type="image/webp" media="(max-width: 600px)">
@@ -532,26 +534,26 @@
 					<source srcset="images/contact/background-2200.webp" type="image/webp" media="(max-width: 2200px)">
 					<source srcset="images/contact/background-2400.webp" type="image/webp">
 					<img src="images/contact/background-2400.jpg" alt="Contact Background" />
-				</picture>
+				</picture><!-- sheet-background -->
 
 				<div class="sheet-nav nav-right elevation-8dp">
 
-					<p class="h3">Contact Us</p>
+					<h2 class="h3">Contact Us</h2>
 
 					<table id="contactCards" class="card-list">
 
 						<tr>
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
-								<p class="h6">Darren Whiting</p>
-								<p class="body1" itemprop="telephone">07789 922540</p>
-								<p class="body1" itemprop="email">darren.whiting@bradfieldrovers.co.uk</p>
+								<span class="h6">Darren Whiting</span>
+								<span class="body1" itemprop="telephone">07789 922540</span>
+								<span class="body1" itemprop="email">darren.whiting@bradfieldrovers.co.uk</span>
 							</td><!-- card -->
 
 							<td class="card elevation-1dp" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
-								<p class="h6">Steve Knights</p>
-								<p class="body1" itemprop="telephone">07766545834</p>
-								<p class="body1" itemprop="email">stephen.knights@bradfieldrovers.co.uk</p>
+								<span class="h6">Steve Knights</span>
+								<span class="body1" itemprop="telephone">07766545834</span>
+								<span class="body1" itemprop="email">stephen.knights@bradfieldrovers.co.uk</span>
 							</td><!-- card -->
 
 						</tr>
@@ -559,14 +561,12 @@
 					</table><!-- card-list -->
 
 					<div class="card elevation-1dp" itemprop="address" onmouseover="cardMouseOver(this);" onmouseout="cardMouseOut(this);">
-						<p class="h6">Address</p>
+						<span class="h6">Address</span>
 						<iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRZMVFH0L2UcR1unN_ybxCSs&key=AIzaSyBaLMl3G3WT0irJuxT2NbEvvrcWRvdgLMo" title="Map" class="map"	allowfullscreen="allowfullscreen">Sorry your browser does not support inline frames.</iframe>
-					</div>
+					</div><!-- card -->
 
-				</div>
-				<!-- sheet-nav -->
-			</div>
-			<!-- sheet -->
+				</div><!-- sheet-nav -->
+			</section><!-- sheet -->
 
 		</main>
 
